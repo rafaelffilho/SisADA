@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblName" layoutX="64.0" layoutY="46.0" text="Nome: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDiscipline" layoutX="64.0" layoutY="87.0" text="Disciplina: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAverage" layoutX="63.0" layoutY="128.0" text="Média: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="327.0" text="Nota">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textScore" layoutX="64.0" layoutY="371.0" prefHeight="34.0" prefWidth="360.0" />
+      <Button layoutX="64.0" layoutY="576.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="34.0" prefWidth="120.0" text="Voltar" />
+      <Button layoutX="841.0" layoutY="593.0" mnemonicParsing="false" onAction="#onSaveClicked" prefHeight="34.0" prefWidth="129.0" text="Salvar" />
+   </children>
+</Pane>
