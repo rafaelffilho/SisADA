@@ -55,12 +55,12 @@ public class PerformanceController extends UserInterface {
         
         for (int i = 0; i < list.size(); i++) {
                 for (int j = i; j < list.size(); j++) {
-                    if(list.get(j).getDiscipline().equals(list.get(i).getDiscipline())){
-                        if(list.get(i).getAverage().equals("Média 1")){
+                    if(list.get(j).getDiscipline().equals(list.get(j).getDiscipline())){
+                        if(list.get(j).getAverage().equals("Média 1")){
                             m1.getData().add(new XYChart.Data(list.get(j).getDiscipline(), list.get(j).getScore()));
-                        }else if (list.get(i).getAverage().equals("Média 2")){
+                        }else if (list.get(j).getAverage().equals("Média 2")){
                             m2.getData().add(new XYChart.Data(list.get(j).getDiscipline(), list.get(j).getScore()));
-                        }else if (list.get(i).getAverage().equals("Média 3")){
+                        }else if (list.get(j).getAverage().equals("Média 3")){
                             m3.getData().add(new XYChart.Data(list.get(j).getDiscipline(), list.get(j).getScore()));
                         }
                     }
